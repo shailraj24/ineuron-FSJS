@@ -102,6 +102,7 @@
 // console.log(Math.min(-25, 89, 23, 45, 67, 89, 19, 34, 56));
 
 // let num = Math.random();
+// give value from  0 to 0.999999
 // let num1 = Math.random() * 11;
 
 // console.log(num1);

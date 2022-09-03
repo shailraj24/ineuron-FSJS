@@ -35,9 +35,13 @@
 // console.log(userDetailCourse.firstName);
 // userDetailCourse.buyCourse("Pro Backend");
 // console.log(userDetailCourse.courseList);
+// console.log(userDetailCourse.getcoursecount());
 // userDetailCourse.buyCourse("React Js");
 // console.log(userDetailCourse.courseList);
+// userDetailCourse.buyCourse("Data science");
+// userDetailCourse.buyCourse("Graphic Designe");
 // console.log(userDetailCourse.getcoursecount());
+// console.log(userDetailCourse.courseList);
 
 // // Keys
 // console.log(Object.keys(userDetailCourse));
@@ -122,9 +126,9 @@
 // let store = country.filter((country) => country.length === 5);
 // console.log(store);
 
-let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
 
 //Syntax:
 // arrayName.reduce(acc,curr)=>{},value)
-let sum = numbers.reduce((acc, cur) => acc + cur, 2);
-console.log(sum);
+// let sum = numbers.reduce((acc, cur) => acc + cur, 2);
+// console.log(sum);

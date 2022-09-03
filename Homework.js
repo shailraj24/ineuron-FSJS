@@ -115,4 +115,35 @@
 
 //12
 
+// let d = new Date();
+
+// console.log(d.getFullYear());
+// console.log(d.getMonth());
+// console.log(d.getDate());
+// console.log(d.getDay());
+// console.log(d.getHours());
+// console.log(d.getMinutes());
+
+
+//13
+
+// var area = function (base,height){
+//     let area = 0.5 * base * height 
+//     console.log(`triangle which base = ${base} and 
+//     height = ${height} 
+//     area = ${area}`);
+// }
+
+// area(5,10);
+
+//14
+
+// var slope = function (x1,y1,x2,y2){
+//     m = (y2-y1)/(x2-x1)
+//     console.log(`slope of ${x1},${y1} and ${x2},${y2} = ${m}`);
+// }
+
+// slope(8,9,7,8);
+
+//15
 

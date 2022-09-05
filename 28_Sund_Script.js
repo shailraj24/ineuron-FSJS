@@ -100,6 +100,11 @@
 
 // // Set Interval
 
+// function tg (){
+//     console.log('HOLA');
+// }
+// setInterval(tg,3000);
+
 // setInterval(() => {
 //   console.log("Hello ");
 // }, 3000);
@@ -130,5 +135,5 @@
 
 //Syntax:
 // arrayName.reduce(acc,curr)=>{},value)
-// let sum = numbers.reduce((acc, cur) => acc + cur, 2);
+// let sum = numbers.reduce((acculmet, cur) => acc + cur, 2);
 // console.log(sum);

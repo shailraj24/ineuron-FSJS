@@ -103,7 +103,6 @@
 // console.log(4 == '4');
 // console.log(4 === '4');
 
-
 // var a = 'python';
 // var b = 'jaguar';
 
@@ -111,7 +110,6 @@
 // console.log(b.length);
 
 // console.log(a.length > b.length);
-
 
 //12
 
@@ -124,13 +122,12 @@
 // console.log(d.getHours());
 // console.log(d.getMinutes());
 
-
 //13
 
 // var area = function (base,height){
-//     let area = 0.5 * base * height 
-//     console.log(`triangle which base = ${base} and 
-//     height = ${height} 
+//     let area = 0.5 * base * height
+//     console.log(`triangle which base = ${base} and
+//     height = ${height}
 //     area = ${area}`);
 // }
 
@@ -147,3 +144,178 @@
 
 //15
 
+// console.log(`Calculate the slope, x-intercept and y-intercept of y = 2x -2 for y-intercept take x = 0`);
+
+// let xIntercept = function (x) {
+//     y = 2x - 2 ;                 //ERROR ERROR ERROR ERROR ERROR
+//   console.log(`slope of x-intercept is ${y}`);
+// };
+// xIntercept(0)
+
+// console.log(`Calculate the slope, x-intercept and y-intercept of y = 2x -2 for x-intercept take y = 0`);
+
+// let yIntercept = function (y) {
+
+//     x = (y + 2) / 2
+//   console.log(`slope of y-intercept is ${x}`);
+// };
+// yIntercept(0)
+
+//16
+
+//let radius = prompt("Enter radius of circle : ")
+// let radius = 5
+// const pi = Math.PI
+// if (radius != null) {
+//     console.log(`Area of Circle with radius ${radius} is = ${pi * radius * radius}
+
+//     and
+
+//     circumference of a circle is =  ${2 * pi * radius}`);
+//   }
+
+//17
+
+// let dateFormater = function (date, seprator) {
+//   let day = date.getDate();
+//   let month = date.getMonth() + 1; //  +1 because .getMonth reuren 0 to 11
+//   let year = date.getFullYear();
+
+//   if (day < 10) {
+//     day = "0" + day;
+//   }
+//   if (month < 10) {
+//     month = "0" + month;
+//   }
+
+//   //  // return day + " " + seprator + " " + month + " " + seprator + " " + year;
+//   return year + " " + seprator + " " + month + " " + seprator + " " + day;
+// };
+
+// let now = new Date();
+
+// console.log(dateFormater(now, "/"));
+// console.log(dateFormater(now, "-"));
+
+// just playing with date language
+
+// let date = new Date();
+// let options = {
+//   weekday: 'long',
+//   year: 'numeric',
+//   month: 'long',
+//   day: 'numeric',
+//   timeZone: 'UTC'
+// };
+// console.log(date.toLocaleDateString('hi-IN', options));
+
+//18
+
+//    //let age = prompt("Enter Your age : ")
+
+// let age = 19 ;
+
+// if (age >= 18) {
+//   console.log("You are old enoug to drive");
+// } else if (age < 18) {
+//     console.log("wait till 18 to drive vehicle");
+// } else {
+//     console.log("Enter proper input 😡");
+// }
+
+//19
+
+//      // const number = prompt("Enter a number: ");
+
+// const number = 20;
+
+// if (number % 2 == 0) {
+//   console.log("The number is even and reminder is zero");
+// } else {
+//   console.log("The number is odd.");
+// }
+
+//20
+
+// let score = 91;
+
+// switch (score != 0) {
+//   case score <= 100 && score >= 80:
+//     console.log("You got A grade");
+//     break;
+//   case score <= 79 && score >= 70:
+//     console.log("You got B grade");
+//     break;
+//   case score <= 69 && score >= 60:
+//     console.log("You got C grade");
+//     break;
+//   case score <= 59 && score >= 50:
+//     console.log("You got D grade");
+//     break;
+//     case score <= 49 && score >= 0:
+//     console.log("You got F grade");
+//     break;
+//   default:
+//     console.log("You got 🍔 not grade");
+// }
+
+//21
+
+// let month = "decenber";
+
+// if (month == "june" || month == "july" || month == "august") {
+//   console.log("its summer ☀️");
+// } else if (month == "march" || month == "epril" || month == "may") {
+//   console.log("its spring");
+// } else if (month == "decenber" || month == "january" || month == "february") {
+//   console.log("its winter ❄️");
+// } else if (month == "september" || month == "october" || month == "november") {
+//   console.log("its autumn ");
+// } else {
+//   console.log("enter proper input");
+// }
+
+//22
+
+function daysInMonth(month, year) {
+  return new Date(year, month, 0).getDate();
+}
+
+console.log(daysInMonth(2, 2009));
+console.log(daysInMonth(11, 2009));
+
+//
+
+function monthNameToMonth(monthName) {
+  const months = {
+    january: 1,
+    february: 2,
+    march: 3,
+    april: 4,
+    may: 5,
+    june: 6,
+    july: 7,
+    august: 8,
+    september: 9,
+    october: 10,
+    november: 11,
+    december: 12,
+  };
+  return months[monthName.toLowerCase()];
+}
+
+function getDaysInMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
+
+function formatDaysInMonth(year, monthName) {
+  let month = monthNameToMonth(monthName);
+  let days = getDaysInMonth(year, month);
+  monthName =
+    monthName.toUpperCase().slice(0, 1) + monthName.toLowerCase().slice(1);
+  return `${monthName} ${year} has ${days} days`;
+}
+
+let monthName = prompt("Enter the month name:");
+let year = prompt("Enter the year:");
+console.log(formatDaysInMonth(year, monthName));

@@ -20,3 +20,5 @@ var stage = function (posetion){
 }
 
 stage("owner")
+
+//tp
